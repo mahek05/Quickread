@@ -1,18 +1,17 @@
 function validateForm() {
-    var fName = document.getElementById("firstName").value;
-    var lName = document.getElementById("lastName").value;
+    var fName = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var cNumber = document.getElementById("cNumber").value;
     var pass = document.getElementById("pass").value;
     var confirmPass = document.getElementById("confirmPass").value;
 
-    if (fName === "" || lName === "" || email === "" || cNumber === "" || pass === "" || confirmPass === "") {
+    if (fName === "" || email === "" || cNumber === "" || pass === "" || confirmPass === "") {
         alert("Fill all the details.");
         return false;
     }
 
-    var namePattern = /^[a-zA-Z]+$/;
-    if (!namePattern.test(fName) || !namePattern.test(lName)) {
+    var namePattern = /^[a-zA-Z\s]+$/; // Allow spaces in name
+    if (!namePattern.test(fName)) {
         alert("Name should only contain letters.");
         return false;
     }
@@ -29,7 +28,7 @@ function validateForm() {
         return false;
     }
 
-    var passPattern = /^(?=.[a-z])(?=.[A-Z])(?=.*\W).{8,}$/;
+    var passPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}$/; // Corrected password pattern
     if (!passPattern.test(pass)) {
         alert("Password should contain at least one lowercase, one uppercase, one special character, and be at least 8 characters long.");
         return false;

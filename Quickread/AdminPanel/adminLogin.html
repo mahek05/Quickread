@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Admin Login</title>
     <style>
         
     input{
@@ -12,7 +12,7 @@
     }
 
     </style>
-    <script src="./Javascript/signup.js"></script>
+    <!-- <script src="./Javascript/signup.js"></script> -->
 </head>
 <body style="background-color: #cbb2d1">
     <center>
@@ -22,15 +22,15 @@
         <br>
         <br>
         <br>
-        <img src="images\quickread_logo.png" alt="" height="50px" width="200px" >
+        <img src="../images/quickread_logo.png" alt="" height="50px" width="200px" >
         <br>
         <br>
         <fieldset style="margin: 25 25 * 25; border: 0cap; text-align: center;">
-            <legend><h2>Sign In</h2></legend>
-            <form action="./PHP/afterSignUp.php" method="post" style="font-style: normal; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 13px;">
+            <legend><h2>Welcome Back!</h2></legend>
+            <form action="./PHP/adminLogin.php" method="post" style="font-style: normal; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 13px;">
                 <pre>Name:       <input type="text" name="username"><br></pre>
                 <pre>Password:   <input type="password" name="password"><br><br></pre>
-                <a href="signup.html" style="text-decoration: none; background-color: rgb(203, 187, 190);">Don't have an account? Sign Up.</a><br> 
+                <a href="adminSignUp.html" style="text-decoration: none; background-color: rgb(203, 187, 190);">Don't have an account? Sign Up.</a><br> 
                 <br>
                 <input type="submit" name="login_submit">
             </form>
