@@ -1,0 +1,177 @@
+*{
+    color:black;
+    padding:0;
+    margin:0;
+    
+}
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:no underline;
+}
+
+#navbar
+{
+    height:60px;
+    background-color:#c17ed2;
+    position:fixed;
+    top:0px;
+    width: 100%;
+
+}
+#logo
+{
+    width:120px;
+    margin-left: 10px;
+
+}
+#sign_image
+{
+    margin-right:100px;
+    margin-top:12px;
+}
+
+button{
+    background-color:black;
+    color:white;
+    
+}
+a{
+    margin-right:100px;
+    text-decoration:none;
+    font-size:18px;
+}
+
+#searchbar
+{
+    color:black;
+    width:300px;
+    height:23px;
+}
+#searchbutton
+{
+    margin-right:100px;
+    height:23px;
+    width:60px;
+}
+.with_image
+{
+    margin:0;
+
+}
+#cart_image
+{
+    margin-right:100px;
+    margin-top:17px;
+}
+#category
+{
+    background-color:rgb(243, 231, 243);
+    height:40px; 
+    line-height:40px;  
+    position:fixed;
+    top:60px;
+    width: 100%;
+    padding-left:100px;
+}
+:hover{
+    color: rgb(190, 115, 115);
+}
+
+.book{
+    display: block;
+    height: 290px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color:#f9f5fa ;
+
+}
+.book:hover {
+    transform: translateY(-6px);
+}
+.book img {
+    display: block;
+    margin: auto;
+}
+.small_para{
+    font-size: 15px;
+    text-align: center;
+}
+
+.small_pre{
+    font-size: 15px;
+    text-align: center;
+    color: grey;
+}
+
+.book-box{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    padding: 1rem;
+}
+
+.book_image{
+    display: block;
+    margin-top:120px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size:23px; 
+}
+.category_heading
+{
+    color:#6f1a84;
+    text-align:center;
+    margin-top:100px;  
+}
+.contactUs
+{
+    margin-top:150px;
+    text-align: center;
+    
+}
+.contactDetails
+{
+    margin-top:30px;
+    width:300px;    
+}
+#Contact_submit
+{
+    margin-top:30px;
+    height:23px;
+    width:60px;
+}
+#Contact_email
+{
+    height:23px;
+}
+#Contact_name
+{
+    height:23px;
+}
+.add_to_cart {
+    padding: 10px 20px;
+    background-color:#e6d5ea;
+    ;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add_to_cart:hover {
+    background-color: #bc74ce;
+}
+.add_to_cart:active {
+    background-color: #9c4bb0; /* Darken the color slightly when button is clicked */
+}
+
